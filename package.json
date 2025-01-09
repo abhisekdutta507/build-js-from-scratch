@@ -1,0 +1,27 @@
+{
+  "name": "build-js-from-scratch",
+  "version": "0.0.1",
+  "description": "Learning tutorial for Webpack.",
+  "main": "dist/main.bundle.js",
+  "types": "types/src/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "webpack",
+    "test": "npm run test"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "abhisek507",
+  "license": "MIT",
+  "dependencies": {
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  }
+}
