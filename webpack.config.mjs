@@ -12,10 +12,20 @@ export default {
   experiments: {
     outputModule: true,
   },
+  performance: {
+    maxAssetSize: 4000000, // 4000000 Bytes = 4 MB
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'plugin.bundle.js',
+    filename: 'index.js',
     libraryTarget: 'module',
+  },
+  resolve: {
+    alias: {
+      "@util": path.resolve(__dirname, 'src/util'),
+      "./util": path.resolve(__dirname, 'src/util'),
+    },
+    extensions: ['.js', '.jsx'],
   },
   optimization: {
     minimize: true,
@@ -23,8 +33,8 @@ export default {
     minimizer: [
       new TerserPlugin({
         terserOptions: {
-          mangle: true, // Don't change variable and function names
-          keep_fnames: false, // Preserve function names
+          mangle: true, // Changes the variable and function names
+          keep_fnames: false, // Doesn't preserve function names
         },
       }),
     ],

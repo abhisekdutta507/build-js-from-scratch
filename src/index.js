@@ -1,5 +1,8 @@
-import { StableWorkerSource } from './utility.js';
+// alias imports
+import { StableWorkerSource } from '@util';
+// relative imports replaced with alias
+import { logger } from './util/logger';
 
-console.log('@log - StableWorkerSource', StableWorkerSource);
+logger('workerSrc', StableWorkerSource);
 
 export { StableWorkerSource };

@@ -2,7 +2,7 @@
   "name": "build-js-from-scratch",
   "version": "0.0.1",
   "description": "Learning tutorial for Webpack.",
-  "main": "dist/main.bundle.js",
+  "main": "dist/index.js",
   "types": "types/src/index.d.ts",
   "type": "module",
   "sideEffects": false,

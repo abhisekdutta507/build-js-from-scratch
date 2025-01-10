@@ -1,3 +1,1 @@
-import { StableWorkerSource } from './plugin.bundle.js';
-
-console.log('@log - step 2 - StableWorkerSource', StableWorkerSource);
+var r={d:(e,o)=>{for(var t in o)r.o(o,t)&&!r.o(e,t)&&Object.defineProperty(e,t,{enumerable:!0,get:o[t]})},o:(r,e)=>Object.prototype.hasOwnProperty.call(r,e)},e={};r.d(e,{D:()=>o});const o="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.mjs";((...r)=>{console.log(...r)})("workerSrc",o);var t=e.D;export{t as StableWorkerSource};
