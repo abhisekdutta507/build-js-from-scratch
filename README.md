@@ -122,7 +122,17 @@ export default {
 };
 ```
 
-**Step 8:** Are you going to use `import` & `export` statements in you project?
+**Step 8:** Set the maximum output file size limit as per your projects need
+
+```mjs
+export default {
+  performance: {
+    maxAssetSize: 4000000 // 4000000 Bytes = 4 MB
+  }
+}
+```
+
+**Step 9:** The `webpack.config.mjs` file finally looks like
 
 ```mjs
 export default {
@@ -161,7 +171,7 @@ export default {
 };
 ```
 
-**Step 9:** Add the build script in `package.json`
+**Step 10:** Add the build script in `package.json`
 
 ```json
 {
